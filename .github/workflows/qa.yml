@@ -19,6 +19,7 @@ jobs:
   deploy:
     name: "Deploy bundle"
     runs-on: ubuntu-latest
+    environment: ${{github.event.inputs.Environment}}
 
     steps:
       - uses: actions/checkout@v3
@@ -33,6 +34,7 @@ jobs:
   pipeline_update:
     name: "Run pipeline update"
     runs-on: ubuntu-latest
+    environment: ${{github.event.inputs.Environment}}
 
     needs:
       - deploy
