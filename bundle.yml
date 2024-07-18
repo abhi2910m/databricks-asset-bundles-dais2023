@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=bundle_config_schema.json test
+# yaml-language-server: $schema=bundle_config_schema.json
 bundle:
   name: medium_post_report
 
